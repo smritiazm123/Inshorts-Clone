@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.newsBox
+{
+    margin: 20px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    border-radius: 4px;
+}
+.container
+{
+    width: 100%;
+    justify-content: center;
+}
+.containerNews
+{
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+}
+.shiftContainer>li
+{
+    justify-content: left;
+}
+.newsBox>div>h3
+{
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+    margin: 0px;
+}
+.newsBox>div>p
+{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(91, 91, 91);
+}
+.newsBox>div>h4,.newsBox>div>h4>span
+{
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(91, 91, 91);
+    margin: 5px 0px;
+}
+.newsBox>div>h4>span
+{
+    font-weight: 300;
+}
+.newsBox>div>img
+{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.newsBox>div:nth-child(2)
+{
+    padding: 5px 15px;
+}
+.newsBox>div>a
+{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(91, 91, 91);
+    margin: 5px 0px;
+    text-decoration: none;
+}
+.iframeStyle
+{
+    width:45%;
+    height: 100vh;
+}
+iframe
+{
+    display: flex;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+}
