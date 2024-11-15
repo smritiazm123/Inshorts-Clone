@@ -85,7 +85,16 @@ export default function News() {
     return (
         <>
         <div>
-            <h2>Latest Bitcoin News</h2>
+            <div className={styles.box}>
+                <div>
+                    <p>For the best experience use Inshorts app on your smart phone</p>
+                    <div>
+                    <img src="https://assets.inshorts.com/website_assets/images/playstore.png" alt="image"/>
+                    <img src="https://assets.inshorts.com/website_assets/images/appstore.png" alt="image"/>
+                </div>
+                </div>
+               
+            </div>
             {articles.length > 0 ? (
                 <div style={{display:"flex"}}>
                 <ul className={`${styles.container} ${openIframeIndex !== null ? styles.shiftContainer : ''}`}>
