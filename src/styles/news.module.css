@@ -81,3 +81,63 @@ iframe
     top: 80px;
     right: 0px;
 }
+.newsBox>div>img
+{
+    width: 300px;
+}
+@media screen and (max-width:1450px)
+{
+    .iframeStyle
+{
+    width:100%;
+    height: 60vh;
+}
+iframe
+{
+    display: flex;
+    position: relative;
+}
+.newsBox
+{
+    width: 70%;
+}
+}
+ul
+{
+    padding: 0px;
+}
+@media screen and (max-width:1050px)
+{
+.newsBox
+{
+    width: 80%;
+}
+}
+@media screen and (max-width:950px)
+{
+.newsBox
+{
+    width: 60%;
+    display: block;
+}
+.newsBox>div:nth-child(1)
+{
+    width: 100%;
+
+}
+.newsBox>div>img
+{
+    width: 100%  !important;
+    height: 300px;
+}
+}
+
+@media screen and (max-width:600px)
+{
+.newsBox
+{
+    width: 100%;
+    display: block;
+}
+
+}

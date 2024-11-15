@@ -15,7 +15,7 @@ export default function News() {
     const {category}=useParams();
     const [openModal, setOpenModal] = useState(false); // Track modal open state
     const [modalArticleUrl, setModalArticleUrl] = useState(""); // Article URL for the modal
-    const isSmallScreen = useMediaQuery("(max-width:1400px)"); // Media query for screens < 1400px
+    const isSmallScreen = useMediaQuery("(max-width:1450px)"); // Media query for screens < 1400px
 
     // Function to fetch news
     const fetchNews = async (newPageSize = pageSize) => {
