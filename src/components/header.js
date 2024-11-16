@@ -61,7 +61,7 @@ function Header()
     return(
     
         <div className={styles.header}>
-            <MenuRoundedIcon onClick={toggleDrawer(true)}/>
+            <MenuRoundedIcon onClick={toggleDrawer(true)} style={{cursor:"pointer"}}/>
             <Drawer open={open} onClose={toggleDrawer(false)}>
           {DrawerList}
         </Drawer>

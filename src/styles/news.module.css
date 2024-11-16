@@ -7,6 +7,23 @@
   display: flex;
   border-radius: 4px;
 }
+.loadMore{
+  margin-top:20px;
+  padding: 10px 20px;
+  color:#000;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor:pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.LoadMoreContainer
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 50px 0px;
+}
 .box {
   width: 100%;
   display: flex;
@@ -88,14 +105,18 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 .iframeStyle {
   width: 45%;
-  height: 100vh;
+  height: 70vh;
 }
 iframe {
   display: flex;
+  justify-content: end;
   position: fixed;
-  top: 200px;
+  top: 180px;
   right: 0px;
+  
 }
+
+
 .newsBox > div > img {
   width: 300px;
 }

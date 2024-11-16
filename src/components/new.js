@@ -9,7 +9,7 @@ export default function News() {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [pageSize, setPageSize] = useState(50); // Initial page size
+    const [pageSize, setPageSize] = useState(20); // Initial page size
     const [hasMore, setHasMore] = useState(true);
     const [openIframeIndex, setOpenIframeIndex] = useState(null); // Track open iframe by article index
     const {category}=useParams();
@@ -143,20 +143,14 @@ export default function News() {
 
             {/* Load More Button */}
             {hasMore && (
+                <div className={styles.LoadMoreContainer}>
                 <button
                     onClick={loadMore}
-                    style={{
-                        marginTop: "20px",
-                        padding: "10px 20px",
-                        backgroundColor: "#007bff",
-                        color: "#fff",
-                        border: "none",
-                        borderRadius: "5px",
-                        cursor: "pointer",
-                    }}
+                   className={styles.loadMore}
                 >
                     Load More
                 </button>
+                </div>
             )}
 
             {!hasMore && <p>No more articles to show.</p>}

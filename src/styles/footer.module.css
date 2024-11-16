@@ -1,0 +1,43 @@
+.footer
+{
+    background-color: #323232;
+    width: 100%;
+    display: flex;
+
+}
+.footer>div:nth-child(1)
+{
+    border-right: 1px solid #fff;
+    width: 30%;
+    display: flex;
+    margin: 30px;
+    justify-content: end;
+}
+
+.footer>div:nth-child(1)>div>img
+{
+    height: 50px;
+    margin-right: 20px;
+}
+.footer>div:nth-child(1)>div>p
+{
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    margin:0px 20px 0px 0px;
+    font-weight: 100;
+}
+.footer>div:nth-child(2)
+{
+   width: 50%;
+   margin: 30px 0px;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+}
+.footer>div:nth-child(2)>div>img
+{
+    height: 50px;
+    margin-right: 30px;
+}
